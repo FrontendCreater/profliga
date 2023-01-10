@@ -124,6 +124,7 @@ body {
 .repair-options__callback {
   display: inline-flex;
   align-items: center;
+  margin-bottom: 2px;
   padding: 18px 37px;
   color: #ffffff;
   font-family: inherit;
