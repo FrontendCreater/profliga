@@ -54,7 +54,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   list-style-type: none;
 }
 
@@ -126,7 +126,7 @@ body {
   align-items: center;
   margin-bottom: 2px;
   padding: 18px 37px;
-  color: #ffffff;
+  color: #ffffff !important;
   font-family: inherit;
   font-size: 10px;
   font-weight: bold;
@@ -159,7 +159,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   list-style-type: none;
 }
 
