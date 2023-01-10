@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+}
+
+.repair-options {
+  padding-top: 96px;
+  padding-bottom: 103px;
+  color: #ffffff;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #292e35;
+}
+
+.repair-options__inner {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.repair-options__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.4;
+  max-width: 510px;
+}
+
+.repair-options__subtitle {
+  margin: 0;
+  margin-bottom: 40px;
+  max-width: 320px;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.repair-options__desc {
+  margin-bottom: 48px;
+  max-width: 390px;
+  color: #7c828a;
+  line-height: 1.6;
+}
+
+.repair-options__hr {
+  margin: 48px 0;
+  background-color: #3e444d;
+  height: 1px;
+}
+
+.repair-options__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.repair-options__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 440px;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.repair-options__item-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.repair-options__item-title {
+  margin: 0;
+  margin-top: auto;
+  max-width: 280px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.repair-options__item-info {
+  position: relative;
+  max-height: 0;
+  transition: max-height .3s linear;
+  overflow: hidden;
+}
+
+.repair-options__item:hover .repair-options__item-info {
+  max-height: 300px;
+}
+
+.repair-options__services {
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.repair-options__services-item {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.repair-options__item-footer {
+  display: flex;
+  align-items: center;
+}
+
+.repair-options__callback {
+  display: inline-flex;
+  align-items: center;
+  padding: 18px 37px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(135deg, rgba(188,143,116,1) 0%, rgba(149,108,83,1) 98%);
+  box-shadow: 0px 2px 0px 0px rgb(124 86 63);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.repair-options__callback:hover {
+  background-image: linear-gradient(135deg, rgba(149,108,83,1) 0%, rgba(188,143,116,1) 100%);
+}
+
+.repair-options__price {
+  margin-left: 14px;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.repair-options__price-sum {
+  color: rgb(187, 138, 108);
+  font-weight: bold;
+}
+
+.repair-options__advantage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.repair-options__advantage-item {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.repair-options__advantage-img {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.repair-options__advantage-desc {
+  margin-left: 24px;
+}
+
+.repair-options__mark {
+  font-weight: 600;
+}
+
+@media (max-width: 1199px) {
+  .repair-options__inner {
+    max-width: 960px;
+  }
+
+  .repair-options__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .repair-options__advantage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 959px) {
+  .repair-options__inner {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 767px) {
+  .repair-options__title {
+    font-size: 24px;
+  }
+
+  .repair-options__subtitle {
+    font-size: 20px;
+  }
+
+  .repair-options__desc {
+    margin-bottom: 40px;
+  }
+
+  .repair-options__list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .repair-options__item {
+    min-height: 340px;
+  }
+
+  .repair-options__item-info {
+    max-height: unset;
+  }
+
+  .repair-options__advantage {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 639px) {
+  .repair-options__inner {
+    max-width: 480px;
+  }
+}
